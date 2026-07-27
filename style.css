@@ -1,0 +1,719 @@
+body{
+    background-color: hsl(0, 0%, 5%);
+    color:white;
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 50px;
+    font-family: 'Space grotesk';
+}
+
+h1,h2,h3,h4,h5,h6{
+    color:white;
+}
+
+p,li{
+    color:white;
+}
+
+a{
+    color: white;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.intro-text{
+    text-align:center;
+}
+
+.intro-text h1{
+    font-size: 3rem;
+    margin-bottom:5px;
+}
+
+.intro-text h2{
+    margin-bottom: 5px;
+}
+
+.portrait {
+    width: 200px;
+    height: 239px;
+    display: flex;
+    border-color: hsl(43, 15%, 91%);
+    border-style:solid;
+    border-width: medium;
+    overflow: hidden;
+}
+
+.portrait img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.15);
+    object-position: 20% 15%;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:30px;
+
+    transition: transform 0.3s ease;
+
+}
+
+.icon-item:hover{
+    transform: translateY(-3px) scale(1.1);
+}
+
+.icon-item p {
+    color: white;
+    margin: 2px 0 0 0;
+    font-size: 15px;
+}
+
+.icon-item a {
+    text-decoration: none;
+}
+
+.email {
+    color: red;
+}
+
+.linkedin {
+    color:  #0077B5; 
+}
+
+.resume {
+    color: rgb(207, 197, 197);
+}
+/*first divider*/
+.skills h3{
+    border-top: 2px solid hsl(0, 66%, 28%);
+    padding-top: 30px;
+    padding-bottom: 5px;
+    text-align: center;
+    text-decoration: underline;
+    font-size:1.2rem;
+}
+/*skills logos*/
+.images{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+
+.skill-description{
+    margin-top:30px;
+    text-align:center;
+    font-size:18px;
+    min-height: 30px;
+    color:white;
+
+    opacity: 1;
+    transform: translateY(0);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.image-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid hsl(43, 15%, 91%);
+    border-radius: 10px;
+
+    padding: 10px;
+    cursor: pointer;
+
+    transition: all 0.25s ease; 
+}
+
+.image-item:hover{
+    border-color: rgba(255,255,255,0.4);
+}
+
+.image-item.active{
+    border-color: hsl(0, 66%, 28%);
+    background-color: rgba(255,255,255,0.08);
+    box-shadow: 0 0 5px rgba(255,255,255,0.15);
+}
+
+
+.image-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.image-item p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*Interests*/
+
+.interests h3{
+    border-top: 2px solid hsl(0, 66%, 28%);
+    padding-top: 40px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+.interests p{
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 15px;
+    padding-bottom: 40px;
+   
+}
+
+/*First project*/
+
+.academic-projects h2{
+    border-top: 2px solid hsl(0, 66%, 28%);
+    border-bottom: 2px solid hsl(0, 66%, 28%);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.line-follower-robot-images{
+    display:flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.project-images{
+    display:grid;
+    grid-template-columns: 400px;
+    gap: 6px;
+}
+
+.project-images img {
+    width: 400px;
+    height: 300px;
+    border-style: solid;
+    border-width: medium;
+    border-color:rgba(255,255,255,0.15);
+    object-fit: cover;
+}
+
+.project-images video{
+    width: 400px;
+    height:250px;
+    border-style: solid;
+    border-width: medium;
+    border-color: rgba(255,255,255,0.15);
+    object-fit: cover;
+}
+
+.video-caption{
+    text-align: center;
+    font-size: 12.5px;
+    font-style: italic;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.project-info ul{
+    margin-top:10px;
+    padding-left:20px;
+}
+
+.project-info li{
+    margin-bottom:10px;
+    font-size: 15px;
+}
+
+.project-info h3{
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.project-info p{
+    margin-top: 20px;
+    font-size: 15px;
+    
+}
+
+.section-title{
+    color: hsl(0, 66%, 40%);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/*second project*/
+
+.rotatedsensor{
+    transform: rotate(90deg);
+}
+
+.rotatedcloseup{
+    transform: rotate(90deg);
+}
+
+.part2-images {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap:10px;
+   
+}
+
+.part-2-maze-solver-robot{
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    gap:40px;
+}
+
+.part2-media{
+    width: 300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part2-media img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: medium solid rgba(255,255,255,0.15);
+}
+
+.part2-caption{
+    width: 300px;
+    text-align: center;
+    font-size: 12.5px;
+    font-style: italic;
+    color: white;
+
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+.part2-info{
+    flex:1;
+}
+
+.part2-info h3{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+}
+
+.part2-info p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.part2-info ul{
+    margin-top:10px;
+    padding-left:20px;
+}
+
+.part2-info li{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+
+hr{
+    margin:20px 0;
+    border:none;
+    border-top: 2px solid hsl(0, 66%, 28%);
+}
+
+/*third project*/
+
+.part-3-traffic-light{
+    display:flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.traffic-images{
+    display:grid;
+    grid-template-columns: 300px 300px;
+    gap: 10px;
+}
+
+.schematic-item{
+    grid-column: 1 / 3;
+}
+
+.media-item video {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: medium solid rgba(255,255,255,0.15);
+}
+
+.traffic-images img {
+    width: 270px;
+    height: 300px;
+    border-style: solid;
+    border-width: medium;
+    border-color:rgba(255,255,255,0.15);
+    object-fit: cover;
+}
+
+
+.traffic-images .longschematic{
+    grid-column: 1 / 3; 
+    width: 580px;
+    height:300px;
+    object-fit: cover;
+}
+
+.traffic-info ul{
+    margin-top:10px;
+    padding-left:20px;
+}
+
+.traffic-info li{
+    margin-bottom:10px;
+    font-size: 15px;
+}
+
+.traffic-info h3{
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.traffic-info p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.media-caption{
+    text-align: left;
+    font-size: 12.5px;
+    font-style: italic;
+    color: white;
+
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+.how-it-works summary{
+    display: inline-block;
+    padding: 8px 16px;
+
+    border: 1px solid hsl(0, 66%, 28%);
+    border-radius: 6px;
+
+    cursor: pointer;
+    list-style: none;
+
+    transition: 0.2s ease;
+}
+
+.how-it-works summary:hover{
+    background-color: hsl(0, 66%, 28%);
+}
+
+/*Now Begins Mechanical Design Intern Section */
+
+.mechanical-design-intern h2{
+    border-top: 2px solid hsl(0, 66%, 28%);
+    border-bottom: 2px solid hsl(0, 66%, 28%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center; 
+    font-size: 30px;
+}
+
+.clamp-info ul{
+    margin-top:10px;
+    padding-left:20px;
+}
+
+.clamp-info li{
+    margin-bottom:10px;
+    font-size: 15px;
+}
+
+.quick-release-clamp-component{
+    display:flex;
+    align-items: flex-start;
+    gap:40px;
+}
+
+.clamp-info{
+    flex: 1;
+}
+
+.clamp-info h3{
+    font-size: 1.3rem;
+    margin-top: 15px;
+    margin-bottom:40px;
+}
+
+.clamp-info p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.golf{
+   position: relative;
+   width: 500px;
+   height: 300px; 
+}
+
+.golf img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+    border-style: solid;
+    border-width: medium;
+    border-color:rgba(255,255,255,0.15);
+    transform: translate(0%, 15%);
+}
+
+.image-text{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, 70%);
+
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+    font-weight: bold;
+
+    text-shadow: 2px 2px 5px black;
+}
+
+/*Now begins Personal Projects Section */
+.personal-projects h2{
+    border-top: 2px solid hsl(0, 66%, 28%);
+    border-bottom: 2px solid hsl(0, 66%, 28%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.photo-info h3{
+    font-size:1.3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.photo-info p{
+    
+    max-width: 680px;
+    margin: 0 auto;
+
+    text-align: left;
+    line-height: 1.5;
+
+    font-size: 15px;
+    padding-top:15px;
+    padding-bottom: 15px;
+   
+}
+
+.photo-info .section-title{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 8px;
+
+    padding-bottom: 0;
+    font-size: 1.2rem;
+}
+
+.photo-link-container{
+    display:flex;
+    justify-content:center;
+    margin-top:15px;
+}
+
+
+.photo-link{
+    display:flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #f4c542;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+
+
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.photo-link i{
+    color: #f4c542;
+    font-size: 30px;
+}
+
+.photo-link:hover{
+    transform: scale(1.12);
+    color:#f4c542;
+}
+
+.photo-link:hover i{
+    color:#f4c542;
+}
+
+/*now begins Latch Design Section*/
+
+
+
+.latch-images {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap:10px;
+   
+}
+
+.vw-latch-project{
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    gap:40px;
+}
+
+.latch-media{
+    width: 300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.latch-media img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: medium solid rgba(255,255,255,0.15);
+}
+
+
+.latch-info{
+    flex:1;
+}
+
+
+.latch-info h3{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+}
+
+.latch-info p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.latch-info ul{
+    margin-top:10px;
+    padding-left:20px;
+}
+
+.latch-info li{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+
+/*Now begins Reach Out Section */
+.reach-out h2{
+    border-top: 2px solid hsl(0, 66%, 28%);
+    border-bottom: 2px solid hsl(0, 66%, 28%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.icons-bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.icon-item-bottom {
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.icon-item-bottom:hover{
+    transform: translateY(-3px) scale(1.1);
+}
+
+.icon-item-bottom p {
+    color: white;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.icon-item-bottom a {
+    text-decoration: none;
+}
+
+.school {
+    color: red;
+}
+
+.personal {
+    color: red;
+}
+
+.linkedin {
+    color: #0077B5;
+}
+
+/*fade in animation*/
+.fade-in{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show{
+    opacity:1;
+    transform: translateY(0);
+}
